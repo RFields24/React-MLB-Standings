@@ -4,7 +4,7 @@ import "./App.css"
 
 function Dropdown() {
 
-  const [state, setstate] = useState(true);
+  const [state, setstate] = useState(false);
 
   const showDropdown=()=>{
     setstate(true);
