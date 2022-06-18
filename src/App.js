@@ -1,25 +1,86 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import Navbar from "./Navbar"
+import Division from"./Divison"
+import TeamStandings from "./TeamStandings"
+import Dropdown from "./Dropdown"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="sb-container">
+      <Navbar />
+      <Division />
+      <TeamStandings />
+      <Dropdown />
     </div>
-  );
+    
+  )
 }
 
-export default App;
+
+//   const[standings, setStandings] = useState([{}])
+
+//   useEffect(() => {
+//     fetch("/api").then(
+//       res => res.json()clear
+//     ).then(
+//       data => {
+//         setStandings(data)
+//       }
+//     )
+// }, [])
+
+
+// class App extends React.Component {
+//   // constructor(props) {
+//   //   super(props);
+
+//   //   this.state = {
+//   //     standings: [
+//   //        {
+//   //         'team': 'rays',
+//   //         'id': '1',
+//   //         'wins': '100',
+//   //         'losses': '62'
+//   //       },
+//   //       {
+//   //         'team': 'red sox',
+//   //         'id': '1',
+//   //         'wins': '92',
+//   //         'losses': '70'
+//   //       },
+//   //       {
+//   //         'team': 'yankees',
+//   //         'id': '1',
+//   //         'wins': '92',
+//   //         'losses': '70'
+//   //       },
+//   //       {
+//   //         'team': 'blue jays',
+//   //         'id': '1',
+//   //         'wins': '91',
+//   //         'losses': '71'
+//   //       },
+//   //       {
+//   //         'team': 'orioles',
+//   //         'id': '1',
+//   //         'wins': '52',
+//   //         'losses': '110'
+//   //       },
+        
+//   //     ]
+//   //   }
+//   // }
+
+//   render(){
+//     const {standings} = this.state;
+//     return <div className="App">Hello World</div>
+//   }
+// }
+
+// {JSON.stringify(standings)} 
+
+
+export default App
+

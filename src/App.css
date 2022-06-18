@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@200&family=Roboto:wght@300;400;500&family=Rubik:wght@300;400;500;900&family=Ubuntu:wght@300;400;500;700&family=Yeseva+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* STANDINGS BOX */
+.sb-container{
+  font-family: 'open sans', sans-serif;
   color: white;
+  text-transform: uppercase;
+  height: 550px;
+  width: 850px;
+  border-radius: 5px;
+  background: #1A1823;
+
+
+  /* WHY DOESNT THIS APPLY MARGIN TO TOP OF BOX AS WELL? */
+  /* COULD FLEX IT BUT FIGURED ID ASK ANYWAY */
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* BOX TOP BAR */
+.navbar-container{
+  font-size: .8rem;
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 5%;
+}
+.navbar{
+  /* border: 1px solid black; */
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* DIVISION TITLE */
+
+.division-container{
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+  padding-left: 1rem;
+}
+.hklogo{
+  background: white;
+  height: 100%;
+  width: 150px;
+}
+
+/* STANDINGS BOXES (TEAMS) */
+
+.team-standings-container{
+  display: flex;
+  height: 80%;
+}
+
+.team-info{
+  display: flex;
+  /* border: 1px solid #cacaca10; */
+  height: 15%;
+  width: 60%;
+}
+.team-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  background: linear-gradient(#091F4D, #1A2F58);
+}
+.logo{
+  height: 70%;
+  filter: invert(1)
+}
+
+.team-name{
+  font-size: 1.5rem;
+  overflow: hidden;
+  color: white;
+  padding: 0 1rem 0 1rem;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#091F4D, #1A2F58);
+}
+.name-logo{
+  height: 150%;
+  filter: invert(1);
+  opacity: 0.15;
+}
+
+.stats{
+  font-size: 1.5rem;
+  height: 100%;
+  display: flex;
+  width: 40%;
+  
+}
+
+.wins, .losses, .gb{
+  border-left: 1px solid #cacaca;
+  color: black;
+  background: white;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.gb{
+  background: yellow;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown{
+  margin-top: 1rem;
+  width: 100%;
+  background: #1A1823;
+  border-radius: 5px;
+}
+
+.dropdown-menu{
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  position: relative;
+}
+
+.dropdown-menu h2{
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+
+
+.dropdown-list{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-list li{
+  font-weight: 600;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.dropdown-list li:hover{
+  color: black;
+  background: white;
 }
