@@ -18,10 +18,10 @@ function TeamRow() {
         </div>
         <div className="stats">
           <div className="wins">
-            <h2>3</h2>
+            <h2>92</h2>
           </div>
           <div className="losses">
-            <h2>3</h2>
+            <h2>70</h2>
           </div>
           <div className="gb">
             <h2>-</h2>

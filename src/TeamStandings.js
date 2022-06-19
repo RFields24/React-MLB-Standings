@@ -1,6 +1,7 @@
 import React from 'react'
 import "./App.css"
 import TeamRow from "./TeamRow"
+import StandingsHeader from "./StandingsHeader"
 
 
 
@@ -8,6 +9,7 @@ import TeamRow from "./TeamRow"
 function TeamStandings() {
   return (
     <div className="team-standings-container">
+      <StandingsHeader />
       <TeamRow />
       <TeamRow />
       <TeamRow />
