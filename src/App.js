@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import Division from"./Divison"
 import TeamStandings from "./TeamStandings"
 import Dropdown from "./Dropdown"
+import { ServerExample } from '../src/components/base'
 
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
       <Division />
       <TeamStandings />
       <Dropdown />
+      <div>
+        <ServerExample/>
+      </div>
     </div>
     
   )
